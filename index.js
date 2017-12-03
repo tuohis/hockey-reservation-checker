@@ -5,7 +5,7 @@ const currentWeekNumber = require('current-week-number');
 const hih = require('./src/helsinki-ice-hall');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const searchString = "Siili";
 
 app.use((request, response, next) => {
@@ -35,11 +35,11 @@ app.get('/', (request, response) => {
   });
 });
 
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
   if (err) {
     return console.log('something bad happened', err);
   }
 
-  console.log(`server is listening on ${port}`);
+  console.log(`server is listening on ${PORT}`);
 });
 
