@@ -1,0 +1,25 @@
+{
+  "name": "hockey-reservation-checker",
+  "version": "1.0.0",
+  "description": "Provide a service which checks the Helsinki Ice Hall reservation calendar if the specified org has a reservation within the next week",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuohis/hockey-reservation-checker.git"
+  },
+  "author": "Mikko Tuohimaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuohis/hockey-reservation-checker/issues"
+  },
+  "homepage": "https://github.com/tuohis/hockey-reservation-checker#readme",
+  "dependencies": {
+    "current-week-number": "^1.0.7",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
