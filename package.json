@@ -19,7 +19,11 @@
   "dependencies": {
     "current-week-number": "^1.0.7",
     "express": "^4.16.2",
+    "redis": "^2.8.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
   }
 }
