@@ -1,7 +1,9 @@
 const rp = require('request-promise');
+const padStart = require('lodash.padstart');
 
 const endpoint = (weekNumber) => {
-  return `http://www.helsinginjaahalli.fi/jaavuorot/vko${weekNumber}.htm`;
+  const zeroPaddedWeekNumber = padStart(weekNumber, 2, '0');
+  return `http://www.helsinginjaahalli.fi/jaavuorot/vko${zeroPaddedWeekNumber}.htm`;
 };
 
 const hasReservation = (searchString, weekNumber) => {
